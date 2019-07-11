@@ -14,6 +14,7 @@
 		3D24F24C22D62D03001ADEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D24F24A22D62D03001ADEE5 /* LaunchScreen.storyboard */; };
 		3D24F25422D62F83001ADEE5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24F25322D62F83001ADEE5 /* TableViewController.swift */; };
 		3D2EB49122D771D100F286F4 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2EB49022D771D100F286F4 /* DataCenter.swift */; };
+		3DBF81CF22D7D40400E2E3F3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF81CE22D7D40400E2E3F3 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3D24F24D22D62D03001ADEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D24F25322D62F83001ADEE5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3D2EB49022D771D100F286F4 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		3DBF81CE22D7D40400E2E3F3 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3D2EB49022D771D100F286F4 /* DataCenter.swift */,
 				3D24F24322D62D02001ADEE5 /* ChartViewController.swift */,
 				3D24F24522D62D02001ADEE5 /* Main.storyboard */,
+				3DBF81CE22D7D40400E2E3F3 /* RoundedButton.swift */,
 				3D24F24822D62D03001ADEE5 /* Assets.xcassets */,
 				3D24F24A22D62D03001ADEE5 /* LaunchScreen.storyboard */,
 				3D24F24D22D62D03001ADEE5 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D24F24422D62D02001ADEE5 /* ChartViewController.swift in Sources */,
+				3DBF81CF22D7D40400E2E3F3 /* RoundedButton.swift in Sources */,
 				3D24F25422D62F83001ADEE5 /* TableViewController.swift in Sources */,
 				3D2EB49122D771D100F286F4 /* DataCenter.swift in Sources */,
 				3D24F24222D62D02001ADEE5 /* AppDelegate.swift in Sources */,
