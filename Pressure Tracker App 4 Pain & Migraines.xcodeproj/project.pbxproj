@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D24F24222D62D02001ADEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24F24122D62D02001ADEE5 /* AppDelegate.swift */; };
-		3D24F24422D62D02001ADEE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24F24322D62D02001ADEE5 /* ViewController.swift */; };
+		3D24F24422D62D02001ADEE5 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24F24322D62D02001ADEE5 /* ChartViewController.swift */; };
 		3D24F24722D62D02001ADEE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D24F24522D62D02001ADEE5 /* Main.storyboard */; };
 		3D24F24922D62D03001ADEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D24F24822D62D03001ADEE5 /* Assets.xcassets */; };
 		3D24F24C22D62D03001ADEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D24F24A22D62D03001ADEE5 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		3D24F23E22D62D02001ADEE5 /* Pressure Tracker App 4 Pain & Migraines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pressure Tracker App 4 Pain & Migraines.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D24F24122D62D02001ADEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D24F24322D62D02001ADEE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D24F24322D62D02001ADEE5 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		3D24F24622D62D02001ADEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D24F24822D62D03001ADEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D24F24B22D62D03001ADEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				3D24F24122D62D02001ADEE5 /* AppDelegate.swift */,
 				3D24F25322D62F83001ADEE5 /* TableViewController.swift */,
 				3D2EB49022D771D100F286F4 /* DataCenter.swift */,
-				3D24F24322D62D02001ADEE5 /* ViewController.swift */,
+				3D24F24322D62D02001ADEE5 /* ChartViewController.swift */,
 				3D24F24522D62D02001ADEE5 /* Main.storyboard */,
 				3D24F24822D62D03001ADEE5 /* Assets.xcassets */,
 				3D24F24A22D62D03001ADEE5 /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D24F24422D62D02001ADEE5 /* ViewController.swift in Sources */,
+				3D24F24422D62D02001ADEE5 /* ChartViewController.swift in Sources */,
 				3D24F25422D62F83001ADEE5 /* TableViewController.swift in Sources */,
 				3D2EB49122D771D100F286F4 /* DataCenter.swift in Sources */,
 				3D24F24222D62D02001ADEE5 /* AppDelegate.swift in Sources */,

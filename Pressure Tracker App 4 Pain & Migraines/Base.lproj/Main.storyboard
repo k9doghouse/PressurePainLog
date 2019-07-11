@@ -10,19 +10,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chart View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pressure_Tracker_App_4_Pain___Migraines" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChartViewController" customModule="Pressure_Tracker_App_4_Pain___Migraines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cB2-tt-XJs">
+                                <rect key="frame" x="0.0" y="243" width="414" height="413"/>
+                                <subviews>
+                                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-VT-xAe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="413"/>
+                                        <color key="backgroundColor" red="0.32870477440000001" green="0.40790033339999998" blue="0.35821563010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cGE-VT-xAe" secondAttribute="trailing" id="IfC-6i-UEu"/>
+                                    <constraint firstItem="cGE-VT-xAe" firstAttribute="leading" secondItem="cB2-tt-XJs" secondAttribute="leading" id="UeK-un-g0d"/>
+                                    <constraint firstItem="cGE-VT-xAe" firstAttribute="top" secondItem="cB2-tt-XJs" secondAttribute="top" id="dvb-hF-izB"/>
+                                    <constraint firstAttribute="bottom" secondItem="cGE-VT-xAe" secondAttribute="bottom" id="mmf-Lr-yG4"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gjl-zP-t2q">
-                                <rect key="frame" x="0.0" y="65" width="414" height="37"/>
+                                <rect key="frame" x="0.0" y="75" width="414" height="45"/>
                                 <color key="backgroundColor" red="0.4074808359" green="0.49951022859999999" blue="0.43985992670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="12" maxY="8"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="  Show Historical Data Table  " image="list-29">
                                     <color key="titleColor" red="0.80194910129999997" green="1" blue="0.78797933210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,15 +49,36 @@
                                     <segue destination="Oob-Pz-7Uc" kind="show" id="zMv-Qp-mIj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Barometric Pressure" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjV-rJ-wta">
+                                <rect key="frame" x="91" y="134" width="232" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.80194910129999997" green="1" blue="0.78797933210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.1184270903" green="0.15331286190000001" blue="0.128531754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 1003.04 mb" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znW-xc-pGz">
+                                <rect key="frame" x="138" y="164" width="138" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.80194910129999997" green="1" blue="0.78797933210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.1184270903" green="0.15331286190000001" blue="0.128531754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        Jul 11, 2019 at 12:54:25 - 1003.04 mb " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPE-v6-4IQ">
+                                <rect key="frame" x="0.0" y="198" width="414" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.80194910129999997" green="1" blue="0.78797933210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.1184270903" green="0.15331286190000001" blue="0.128531754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB0-Ze-nqQ">
-                                <rect key="frame" x="0.0" y="685" width="414" height="33"/>
+                                <rect key="frame" x="0.0" y="678" width="414" height="38"/>
                                 <color key="backgroundColor" red="0.40748083591461182" green="0.49951022863388062" blue="0.43985992670059204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="rxr-rg-O5U"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.80194910129999997" green="1" blue="0.78797933210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title=" Refresh Chart View ">
                                     <color key="titleColor" red="0.80194910129999997" green="1" blue="0.78797933210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,16 +88,34 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FB0-Ze-nqQ" firstAttribute="trailing" secondItem="Gjl-zP-t2q" secondAttribute="trailing" id="Q7S-9C-upl"/>
-                            <constraint firstItem="FB0-Ze-nqQ" firstAttribute="leading" secondItem="Gjl-zP-t2q" secondAttribute="leading" id="YQs-4E-24u"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FB0-Ze-nqQ" secondAttribute="bottom" constant="18" id="gk3-8z-KeT"/>
-                            <constraint firstItem="Gjl-zP-t2q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="owT-CC-PpK"/>
-                            <constraint firstItem="Gjl-zP-t2q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uZ5-DQ-nfz"/>
-                            <constraint firstAttribute="trailing" secondItem="Gjl-zP-t2q" secondAttribute="trailing" id="y1Z-Tu-twA"/>
+                            <constraint firstItem="cB2-tt-XJs" firstAttribute="top" secondItem="kPE-v6-4IQ" secondAttribute="bottom" constant="21" id="18c-u3-0wi"/>
+                            <constraint firstItem="Gjl-zP-t2q" firstAttribute="leading" secondItem="kPE-v6-4IQ" secondAttribute="leading" id="27G-0G-uYG"/>
+                            <constraint firstItem="cB2-tt-XJs" firstAttribute="trailing" secondItem="FB0-Ze-nqQ" secondAttribute="trailing" id="4ya-Nx-NDL"/>
+                            <constraint firstItem="kPE-v6-4IQ" firstAttribute="top" secondItem="znW-xc-pGz" secondAttribute="bottom" constant="3" id="63K-cT-7R6"/>
+                            <constraint firstItem="vjV-rJ-wta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="6cp-VA-4Fd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FB0-Ze-nqQ" secondAttribute="trailing" symbolic="YES" id="EOC-je-ZJw"/>
+                            <constraint firstItem="cB2-tt-XJs" firstAttribute="leading" secondItem="kPE-v6-4IQ" secondAttribute="leading" id="F8D-WC-PgX"/>
+                            <constraint firstItem="Gjl-zP-t2q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="MRD-yQ-yfa"/>
+                            <constraint firstItem="Gjl-zP-t2q" firstAttribute="centerX" secondItem="vjV-rJ-wta" secondAttribute="centerX" id="QHA-aG-LeQ"/>
+                            <constraint firstItem="cB2-tt-XJs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kPE-v6-4IQ" secondAttribute="trailing" id="SSs-kX-1Fu"/>
+                            <constraint firstItem="znW-xc-pGz" firstAttribute="top" secondItem="vjV-rJ-wta" secondAttribute="bottom" constant="6" id="U1D-XT-2gs"/>
+                            <constraint firstItem="kPE-v6-4IQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ekH-Qh-bOZ"/>
+                            <constraint firstItem="FB0-Ze-nqQ" firstAttribute="top" secondItem="cB2-tt-XJs" secondAttribute="bottom" constant="22" id="g3e-fm-Coa"/>
+                            <constraint firstItem="vjV-rJ-wta" firstAttribute="top" secondItem="Gjl-zP-t2q" secondAttribute="bottom" constant="14" id="n4t-Cz-f4V"/>
+                            <constraint firstItem="kPE-v6-4IQ" firstAttribute="centerX" secondItem="znW-xc-pGz" secondAttribute="centerX" id="pMA-5d-f43"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FB0-Ze-nqQ" secondAttribute="bottom" constant="20" id="vj3-KO-qr7"/>
+                            <constraint firstItem="vjV-rJ-wta" firstAttribute="centerX" secondItem="znW-xc-pGz" secondAttribute="centerX" id="wJP-JI-1xe"/>
+                            <constraint firstItem="FB0-Ze-nqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yNV-g8-tN9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kPE-v6-4IQ" secondAttribute="trailing" symbolic="YES" id="zI7-wi-uXG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jj7-AG-n0C"/>
+                    <connections>
+                        <outlet property="bigStringLabel" destination="kPE-v6-4IQ" id="4Ho-CX-P3T"/>
+                        <outlet property="currentPressureLabel" destination="znW-xc-pGz" id="wEQ-hH-JWf"/>
+                        <outlet property="view" destination="cGE-VT-xAe" id="L3C-k1-4su"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,12 +125,18 @@
         <scene sceneID="puv-BO-6rc">
             <objects>
                 <tableViewController restorationIdentifier="tableviewControl" id="Oob-Pz-7Uc" customClass="TableViewController" customModule="Pressure_Tracker_App_4_Pain___Migraines" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zKp-8j-Jt8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zKp-8j-Jt8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.99729840540000003" blue="0.79639589430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="scrollIndicatorInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                        <color key="separatorColor" red="0.99942404029999998" green="0.99729840540000003" blue="0.79639589430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <color key="sectionIndexColor" red="0.26713877920000001" green="0.95955699679999995" blue="0.69490581750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.99942404029999998" green="0.99729840540000003" blue="0.79639589430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.80194910129999997" green="1" blue="0.78797933210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL_ID" id="Fbh-0R-7Xw">
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="CELL_ID" id="Fbh-0R-7Xw">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fbh-0R-7Xw" id="xOZ-CE-5y0">
@@ -83,6 +145,7 @@
                                     <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
