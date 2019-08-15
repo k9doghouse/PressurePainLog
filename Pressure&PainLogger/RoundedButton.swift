@@ -20,8 +20,8 @@ public class RoundedButton : UIButton
         { didSet { updateCornerRadiusAndBorder() } }
 
     func updateCornerRadiusAndBorder()
-    { layer.cornerRadius = rounded ? frame.size.height / 8 : 0
-      layer.borderWidth = 1
-      layer.borderColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
-      layer.backgroundColor = #colorLiteral(red: 0.3287047744, green: 0.4079003334, blue: 0.3582156301, alpha: 1)
+    { layer.cornerRadius = rounded ? frame.size.height / 7 : 0
+        layer.borderWidth = 0.5
+        layer.borderColor = #colorLiteral(red: 0.00734347105, green: 0.2150577009, blue: 0.2202971578, alpha: 1)
+        layer.backgroundColor = #colorLiteral(red: 0.008680125698, green: 0.299654603, blue: 0.304741025, alpha: 1)
     } }
