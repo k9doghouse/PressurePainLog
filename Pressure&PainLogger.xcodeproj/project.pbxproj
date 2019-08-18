@@ -14,8 +14,11 @@
 		3D24F24C22D62D03001ADEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D24F24A22D62D03001ADEE5 /* LaunchScreen.storyboard */; };
 		3D24F25422D62F83001ADEE5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24F25322D62F83001ADEE5 /* TableViewController.swift */; };
 		3D2EB49122D771D100F286F4 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2EB49022D771D100F286F4 /* DataCenter.swift */; };
+		3D6ABA502308C872008627B8 /* DetailTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6ABA4F2308C872008627B8 /* DetailTVCell.xib */; };
 		3DBF81CF22D7D40400E2E3F3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF81CE22D7D40400E2E3F3 /* RoundedButton.swift */; };
+		3DC13F362308992C00CE26BC /* DetailTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC13F342308992C00CE26BC /* DetailTVCell.swift */; };
 		3DCE7E7D22DA8EC100D962E9 /* Charter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE7E7C22DA8EC100D962E9 /* Charter.swift */; };
+		3DE1E764230844EC0093B11A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1E763230844EC0093B11A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +31,11 @@
 		3D24F24D22D62D03001ADEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D24F25322D62F83001ADEE5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3D2EB49022D771D100F286F4 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		3D6ABA4F2308C872008627B8 /* DetailTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTVCell.xib; sourceTree = "<group>"; };
 		3DBF81CE22D7D40400E2E3F3 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		3DC13F342308992C00CE26BC /* DetailTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTVCell.swift; sourceTree = "<group>"; };
 		3DCE7E7C22DA8EC100D962E9 /* Charter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charter.swift; sourceTree = "<group>"; };
+		3DE1E763230844EC0093B11A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +68,53 @@
 		3D24F24022D62D02001ADEE5 /* Pressure&PainLogger */ = {
 			isa = PBXGroup;
 			children = (
-				3D24F24122D62D02001ADEE5 /* AppDelegate.swift */,
-				3D24F24822D62D03001ADEE5 /* Assets.xcassets */,
-				3DCE7E7C22DA8EC100D962E9 /* Charter.swift */,
-				3D24F24322D62D02001ADEE5 /* ChartViewController.swift */,
-				3D2EB49022D771D100F286F4 /* DataCenter.swift */,
+				3DC13F3823089B9000CE26BC /* view */,
+				3DE1E76523086A1E0093B11A /* control */,
+				3DC13F3923089BF200CE26BC /* model */,
+				3DC13F3A23089C2600CE26BC /* support */,
 				3D24F24D22D62D03001ADEE5 /* Info.plist */,
-				3D24F24A22D62D03001ADEE5 /* LaunchScreen.storyboard */,
-				3D24F24522D62D02001ADEE5 /* Main.storyboard */,
-				3DBF81CE22D7D40400E2E3F3 /* RoundedButton.swift */,
-				3D24F25322D62F83001ADEE5 /* TableViewController.swift */,
 			);
 			path = "Pressure&PainLogger";
+			sourceTree = "<group>";
+		};
+		3DC13F3823089B9000CE26BC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3D6ABA4F2308C872008627B8 /* DetailTVCell.xib */,
+				3D24F24A22D62D03001ADEE5 /* LaunchScreen.storyboard */,
+				3D24F24522D62D02001ADEE5 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3DC13F3923089BF200CE26BC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE7E7C22DA8EC100D962E9 /* Charter.swift */,
+				3D2EB49022D771D100F286F4 /* DataCenter.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3DC13F3A23089C2600CE26BC /* support */ = {
+			isa = PBXGroup;
+			children = (
+				3D24F24122D62D02001ADEE5 /* AppDelegate.swift */,
+				3D24F24822D62D03001ADEE5 /* Assets.xcassets */,
+				3DBF81CE22D7D40400E2E3F3 /* RoundedButton.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		3DE1E76523086A1E0093B11A /* control */ = {
+			isa = PBXGroup;
+			children = (
+				3D24F24322D62D02001ADEE5 /* ChartViewController.swift */,
+				3DE1E763230844EC0093B11A /* DetailViewController.swift */,
+				3DC13F342308992C00CE26BC /* DetailTVCell.swift */,
+				3D24F25322D62F83001ADEE5 /* TableViewController.swift */,
+			);
+			path = control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +177,7 @@
 			files = (
 				3D24F24C22D62D03001ADEE5 /* LaunchScreen.storyboard in Resources */,
 				3D24F24922D62D03001ADEE5 /* Assets.xcassets in Resources */,
+				3D6ABA502308C872008627B8 /* DetailTVCell.xib in Resources */,
 				3D24F24722D62D02001ADEE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,10 +191,12 @@
 			files = (
 				3D24F24422D62D02001ADEE5 /* ChartViewController.swift in Sources */,
 				3DCE7E7D22DA8EC100D962E9 /* Charter.swift in Sources */,
+				3DC13F362308992C00CE26BC /* DetailTVCell.swift in Sources */,
 				3DBF81CF22D7D40400E2E3F3 /* RoundedButton.swift in Sources */,
 				3D24F25422D62F83001ADEE5 /* TableViewController.swift in Sources */,
 				3D2EB49122D771D100F286F4 /* DataCenter.swift in Sources */,
 				3D24F24222D62D02001ADEE5 /* AppDelegate.swift in Sources */,
+				3DE1E764230844EC0093B11A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,4 @@
-//
+//  https://github.com/k9doghouse/Pressure-PainLog
 //  ChartViewController.swift
 // Pressure Tracker App 4 Pain & Migraines
 //
@@ -50,12 +50,12 @@ class ChartViewController: UIViewController {
     let dataFilePath = FileManager.default.urls(for: .documentDirectory,
             in:
                 .userDomainMask).first?
-                .appendingPathComponent("Pressure_00k1.plist")
+                .appendingPathComponent("Pressure_00b12.plist")
 
         let dataFilePath01 = FileManager.default.urls(for: .documentDirectory,
-                                                    in:
-            .userDomainMask).first?
-            .appendingPathComponent("DataCenter_00k1.plist")
+                in:
+                    .userDomainMask).first?
+                    .appendingPathComponent("DataCenter_00b12.plist")
 
 
     override func viewDidLoad() {
@@ -100,8 +100,7 @@ class ChartViewController: UIViewController {
         if segue.destination is TableViewController
         {
             let vc = segue.destination as? TableViewController
-            vc?.passedData   = pointEntryArray
-            vc?.passedData01 = dataCenterArray
+            vc?.passedData = pointEntryArray.reversed()
         }
     }
 
@@ -109,10 +108,10 @@ class ChartViewController: UIViewController {
     func intervalTimer3600()
     {
         intervalTimer = Timer.scheduledTimer(timeInterval: TimeInterval(hour),
-                                             target: self,
-                                             selector: #selector(getSensorData),
-                                             userInfo: nil,
-                                             repeats: true)
+                                                   target: self,
+                                                 selector: #selector(getSensorData),
+                                                 userInfo: nil,
+                                                  repeats: true)
     }
 
 
@@ -221,7 +220,7 @@ class ChartViewController: UIViewController {
         //MARK - get saved data center array
         func loadDataCenterHistory() {
 
-            if let data01 = try? Data(contentsOf: dataFilePath01!) {
+            if let data01 = try? Data(contentsOf: dataFilePath01 ?? dataFilePath01!) {
 
                 let decoder = PropertyListDecoder()
                 do {
@@ -236,14 +235,14 @@ class ChartViewController: UIViewController {
 /// IBActions
     @IBAction func RefreshChartViewButtonTapped(_ sender: RoundedButton) {
         getSensorData()
-        print("dataCenterArray.count: ",dataCenterArray.count)
     }
 
     @IBAction func listButtonTapped(_ sender: UIBarButtonItem) {
-        let vc = TableViewController(nibName: "TableViewController", bundle: nil)
-        vc.passedData = pointEntryArray
-        vc.passedData01 = dataCenterArray
         
+        let vc = TableViewController(nibName: "TableViewController", bundle: nil)
+
+        vc.passedData = pointEntryArray 
+
         navigationController?.pushViewController(vc, animated: true)
     }
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jh8-Zg-OJN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jh8-Zg-OJN">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,10 +14,6 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController restorationIdentifier="ChartViewController" storyboardIdentifier="ChartViewController" title="Barometric Chart View" modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ChartViewController" customModule="Pressure_PainLogger" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KHr-QU-Hyb"/>
-                        <viewControllerLayoutGuide type="bottom" id="z1E-Nn-vwM"/>
-                    </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,30 +81,30 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0086801256980000002" green="0.29965460300000002" blue="0.304741025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="BsY-B0-Elu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Mo-cD-Nmh"/>
+                            <constraint firstItem="BsY-B0-Elu" firstAttribute="centerX" secondItem="7lA-9r-XgP" secondAttribute="centerX" id="0Mo-cD-Nmh"/>
                             <constraint firstItem="kPE-v6-4IQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="2gP-7P-2r6"/>
                             <constraint firstItem="znW-xc-pGz" firstAttribute="centerX" secondItem="kPE-v6-4IQ" secondAttribute="centerX" id="3dK-7H-q1C"/>
                             <constraint firstItem="BsY-B0-Elu" firstAttribute="top" secondItem="l7Y-2j-vSu" secondAttribute="bottom" constant="8" symbolic="YES" id="8QQ-0L-ixS"/>
-                            <constraint firstItem="z1E-Nn-vwM" firstAttribute="top" secondItem="kPE-v6-4IQ" secondAttribute="bottom" constant="77" id="8TY-np-yeZ"/>
+                            <constraint firstItem="7lA-9r-XgP" firstAttribute="bottom" secondItem="kPE-v6-4IQ" secondAttribute="bottom" constant="77" id="8TY-np-yeZ"/>
                             <constraint firstItem="FB0-Ze-nqQ" firstAttribute="top" secondItem="kPE-v6-4IQ" secondAttribute="bottom" constant="8" symbolic="YES" id="DWM-O6-fp9"/>
                             <constraint firstItem="vjV-rJ-wta" firstAttribute="top" secondItem="BsY-B0-Elu" secondAttribute="bottom" constant="8" symbolic="YES" id="DvK-oY-92U"/>
-                            <constraint firstItem="l7Y-2j-vSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E0z-WP-qF5"/>
-                            <constraint firstItem="vjV-rJ-wta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FKv-ds-T3z"/>
+                            <constraint firstItem="l7Y-2j-vSu" firstAttribute="centerX" secondItem="7lA-9r-XgP" secondAttribute="centerX" id="E0z-WP-qF5"/>
+                            <constraint firstItem="vjV-rJ-wta" firstAttribute="centerX" secondItem="7lA-9r-XgP" secondAttribute="centerX" id="FKv-ds-T3z"/>
                             <constraint firstItem="FB0-Ze-nqQ" firstAttribute="centerX" secondItem="BsY-B0-Elu" secondAttribute="centerX" id="HO9-cT-UyP"/>
                             <constraint firstItem="kPE-v6-4IQ" firstAttribute="top" secondItem="znW-xc-pGz" secondAttribute="bottom" constant="8" symbolic="YES" id="N1v-iq-Ewe"/>
-                            <constraint firstItem="z1E-Nn-vwM" firstAttribute="top" secondItem="FB0-Ze-nqQ" secondAttribute="bottom" constant="23" id="aRl-4h-UIl"/>
+                            <constraint firstItem="7lA-9r-XgP" firstAttribute="bottom" secondItem="FB0-Ze-nqQ" secondAttribute="bottom" constant="23" id="aRl-4h-UIl"/>
                             <constraint firstItem="znW-xc-pGz" firstAttribute="top" secondItem="vjV-rJ-wta" secondAttribute="bottom" constant="6" id="b0r-X1-IOQ"/>
-                            <constraint firstItem="BsY-B0-Elu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ld5-Xm-ZtS"/>
-                            <constraint firstItem="l7Y-2j-vSu" firstAttribute="top" secondItem="KHr-QU-Hyb" secondAttribute="bottom" constant="8" id="t4g-i2-wsr"/>
+                            <constraint firstItem="BsY-B0-Elu" firstAttribute="leading" secondItem="7lA-9r-XgP" secondAttribute="leading" id="ld5-Xm-ZtS"/>
+                            <constraint firstItem="l7Y-2j-vSu" firstAttribute="top" secondItem="7lA-9r-XgP" secondAttribute="top" constant="8" id="t4g-i2-wsr"/>
                             <constraint firstItem="vjV-rJ-wta" firstAttribute="centerX" secondItem="znW-xc-pGz" secondAttribute="centerX" id="uv2-GV-ohb"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="7lA-9r-XgP"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pressure &amp; Pain Logger" largeTitleDisplayMode="always" id="jj7-AG-n0C">
                         <barButtonItem key="rightBarButtonItem" title="List" id="ccb-tR-fJi">
                             <color key="tintColor" red="0.99942404029999998" green="0.99729840540000003" blue="0.79639589430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="listButtonTapped:" destination="BYZ-38-t0r" id="rsm-GV-2IQ"/>
-                                <segue destination="Oob-Pz-7Uc" kind="show" id="TSC-8q-06u"/>
+                                <segue destination="Oob-Pz-7Uc" kind="show" identifier="showTheListSegue" id="TSC-8q-06u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -121,48 +118,132 @@
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="24.456521739130437"/>
         </scene>
-        <!--Table View Controller-->
+        <!--List-->
         <scene sceneID="puv-BO-6rc">
             <objects>
-                <tableViewController restorationIdentifier="tableviewController" modalTransitionStyle="crossDissolve" id="Oob-Pz-7Uc" customClass="TableViewController" customModule="Pressure_PainLogger" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" pagingEnabled="YES" delaysContentTouches="NO" canCancelContentTouches="NO" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" allowsSelectionDuringEditing="YES" rowHeight="30" estimatedRowHeight="30" sectionHeaderHeight="30" estimatedSectionHeaderHeight="30" sectionFooterHeight="30" estimatedSectionFooterHeight="30" id="zKp-8j-Jt8">
+                <tableViewController restorationIdentifier="tableviewController" title="List" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="Oob-Pz-7Uc" customClass="TableViewController" customModule="Pressure_PainLogger" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" pagingEnabled="YES" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zKp-8j-Jt8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.1184270903" green="0.15331286190000001" blue="0.128531754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <inset key="scrollIndicatorInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
-                        <color key="separatorColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
-                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0079558733849999994" green="0.2011905313" blue="0.20157262679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                        <color key="separatorColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" red="0.99942404029999998" green="0.99729840540000003" blue="0.79639589430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" restorationIdentifier="theCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="CELL_ID" rowHeight="35" id="Lgd-kb-TEo">
-                                <rect key="frame" x="0.0" y="30" width="414" height="35"/>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CELL_ID_01" id="FWt-Wy-0ON">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="left" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lgd-kb-TEo" id="M0m-4E-6A2" customClass="UITableViewCell">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="34.666666666666664"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FWt-Wy-0ON" id="RhM-hT-YxZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.1184270903" green="0.15331286190000001" blue="0.128531754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.96963203019999999" green="0.99933999780000005" blue="0.96627093740000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" allowsDirectInteraction="YES"/>
-                                </accessibility>
-                                <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="Oob-Pz-7Uc" id="Cf0-Ij-o6X"/>
                             <outlet property="delegate" destination="Oob-Pz-7Uc" id="hyQ-EJ-Wep"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="AnO-W4-aeI" kind="show" identifier="showThePainDetailScene" id="1IK-D5-8Pd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKi-4F-UX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1613.0434782608697" y="23.64130434782609"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="kqw-7w-8FO">
+            <objects>
+                <viewController restorationIdentifier="detailVC" title="Detail" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="partialCurl" id="AnO-W4-aeI" customClass="DetailViewController" customModule="Pressure_PainLogger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" id="mYW-KZ-ywb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metrics for the Selection" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="usn-t4-AmR">
+                                <rect key="frame" x="123" y="128" width="168" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big String Label From selection" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DyL-Fo-fPN">
+                                <rect key="frame" x="100" y="155" width="214" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="highlightedColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What pain are you feeling right now?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-C2-4gn">
+                                <rect key="frame" x="60" y="194" width="294" height="30"/>
+                                <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="P4n-Pc-b24"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.59423842709999997" green="1" blue="0.66159276190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall pain level (1-10)" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Xx-Xg-AKQ">
+                                <rect key="frame" x="20" y="222" width="190" height="50"/>
+                                <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="haU-ac-XUW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <pickerView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWB-pe-bS5">
+                                <rect key="frame" x="218" y="222" width="176" height="50"/>
+                                <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="Dpu-rT-jp4"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="leading" secondItem="aRq-DX-rM3" secondAttribute="leading" constant="20" id="0Wg-Nq-yRr"/>
+                            <constraint firstItem="WWB-pe-bS5" firstAttribute="leading" secondItem="4Xx-Xg-AKQ" secondAttribute="trailing" constant="8" id="0xc-Sq-iIs"/>
+                            <constraint firstItem="usn-t4-AmR" firstAttribute="leading" secondItem="aRq-DX-rM3" secondAttribute="leading" constant="123" id="6Oo-tT-YOa"/>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="bottom" secondItem="WWB-pe-bS5" secondAttribute="bottom" id="6mS-lN-WgQ"/>
+                            <constraint firstItem="usn-t4-AmR" firstAttribute="top" secondItem="aRq-DX-rM3" secondAttribute="top" constant="12" id="Ce7-bk-uV0"/>
+                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="centerX" secondItem="mYW-KZ-ywb" secondAttribute="centerX" id="DGE-zY-g0A"/>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="top" secondItem="hbl-C2-4gn" secondAttribute="bottom" constant="-2" id="IDN-CX-sEn"/>
+                            <constraint firstItem="hbl-C2-4gn" firstAttribute="top" secondItem="aRq-DX-rM3" secondAttribute="top" constant="78" id="Jf4-6c-xTu"/>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="top" secondItem="WWB-pe-bS5" secondAttribute="top" id="N5c-3c-qff"/>
+                            <constraint firstItem="hbl-C2-4gn" firstAttribute="centerX" secondItem="mYW-KZ-ywb" secondAttribute="centerX" id="RuC-vi-ED9"/>
+                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="leading" secondItem="aRq-DX-rM3" secondAttribute="leading" constant="100" id="TGD-C4-ZDQ"/>
+                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="top" secondItem="usn-t4-AmR" secondAttribute="bottom" constant="8" id="UI6-B7-Vfb"/>
+                            <constraint firstItem="hbl-C2-4gn" firstAttribute="top" secondItem="aRq-DX-rM3" secondAttribute="top" constant="78" id="VSn-tG-41X"/>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="leading" secondItem="mYW-KZ-ywb" secondAttribute="leadingMargin" id="fIs-Oc-Yi2"/>
+                            <constraint firstItem="aRq-DX-rM3" firstAttribute="bottom" secondItem="4Xx-Xg-AKQ" secondAttribute="bottom" constant="464" id="jsG-2P-StC"/>
+                            <constraint firstItem="usn-t4-AmR" firstAttribute="centerX" secondItem="DyL-Fo-fPN" secondAttribute="centerX" id="oyJ-RI-muK"/>
+                            <constraint firstItem="hbl-C2-4gn" firstAttribute="centerX" secondItem="mYW-KZ-ywb" secondAttribute="centerX" id="pMy-8T-tZE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aRq-DX-rM3"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigStringLabelFromSelection" destination="DyL-Fo-fPN" id="1e0-Me-izT"/>
+                        <outlet property="painLevelPicker" destination="WWB-pe-bS5" id="lL9-GF-PNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0D-mo-5yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2286.9565217391305" y="23.64130434782609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Plx-au-Dmx">
@@ -192,8 +273,8 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8E-VY-nQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="270" y="24"/>
+            <point key="canvasLocation" x="291" y="24"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.99933999780000005" green="0.9973834157" blue="0.79550641779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" red="0.99942404029999998" green="0.99204021419999999" blue="0.81009454739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

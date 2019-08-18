@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/murph/Desktop/Pressure&amp;PainLog/Pressure&amp;PainLogger.xcodeproj">
+      location = "group:../Pressure&amp;PainLogger/view/DetailTVCell.xib">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
