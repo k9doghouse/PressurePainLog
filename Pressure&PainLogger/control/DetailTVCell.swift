@@ -43,13 +43,12 @@ class DetailTVCell: UITableViewCell {
 
         didSet {
             guard let cellData = cellData else { return }
-            print("xx.  ",cellData.title)
+
             textLabel?.backgroundColor = #colorLiteral(red: 0.9993399978, green: 0.9973834157, blue: 0.7955064178, alpha: 1)
             textLabel?.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             textLabel?.shadowColor = #colorLiteral(red: 0, green: 0.7543517904, blue: 0.5842392621, alpha: 1)
             textLabel?.shadowOffset = CGSize(width: 1, height: 1)
             textLabel?.text = cellData.title
-            print("yy.  ",textLabel?.text ?? "Empty")
         }
     }
 

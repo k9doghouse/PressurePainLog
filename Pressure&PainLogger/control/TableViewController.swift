@@ -40,7 +40,6 @@ class TableViewController: UITableViewController {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID_01, for: indexPath) as! DetailTVCell
         let cellData: String = passedData[indexPath.row].bigTitle
-        print("  cell data: ",cellData)
 
         cell.bigStringInTheCellLabel.text = cellData
         return cell
@@ -52,8 +51,7 @@ class TableViewController: UITableViewController {
         if segue.destination is DetailViewController
         {
             let vc01 = segue.destination as? DetailViewController
-            vc01?.detailData        = passedData  // point entry array
-            vc01?.whichRowWasTapped = theRow
+            vc01?.detailData = passedData  // point entry array
         }
     }
 
@@ -63,12 +61,9 @@ class TableViewController: UITableViewController {
 
         let vc01 = DetailViewController(nibName: "DetailTVCell", bundle: nil)
 
-        vc01.detailData        = passedData
-        vc01.whichRowWasTapped = theRow
-        print("the row number that was tapped from the tableviw: ",theRow)
-
-//        navigationController?.pushViewController(vc01, animated: true)
-
+        vc01.detailData = passedData
+        vc01.selectedRow = theRow
+ 
         self.performSegue(withIdentifier: "showThePainDetailScene", sender: self)
     }
 

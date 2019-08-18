@@ -155,7 +155,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKi-4F-UX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613.0434782608697" y="23.64130434782609"/>
+            <point key="canvasLocation" x="1616" y="24"/>
         </scene>
         <!--Detail-->
         <scene sceneID="kqw-7w-8FO">
@@ -181,64 +181,64 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What pain are you feeling right now?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-C2-4gn">
-                                <rect key="frame" x="60" y="194" width="294" height="30"/>
+                                <rect key="frame" x="60" y="182" width="294" height="23"/>
                                 <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="P4n-Pc-b24"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0079558733849999994" green="0.2011905313" blue="0.20157262679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" red="0.59423842709999997" green="1" blue="0.66159276190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall pain level (1-10)" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Xx-Xg-AKQ">
-                                <rect key="frame" x="20" y="222" width="190" height="50"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Pain level (1-10)" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Xx-Xg-AKQ">
+                                <rect key="frame" x="20" y="213" width="166" height="31"/>
                                 <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="haU-ac-XUW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <pickerView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWB-pe-bS5">
-                                <rect key="frame" x="218" y="222" width="176" height="50"/>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="painLabel" text="7.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm8-kk-4yT">
+                                <rect key="frame" x="242" y="215" width="33" height="29"/>
                                 <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="176" id="Dpu-rT-jp4"/>
-                                </constraints>
-                            </pickerView>
+                                <color key="tintColor" red="0.0079558733849999994" green="0.2011905313" blue="0.20157262679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.74093376990000004" green="0.212550089" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="stepperTapped" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5.5" maximumValue="10" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6bb-tQ-fAE">
+                                <rect key="frame" x="300" y="215" width="94" height="29"/>
+                                <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0079558733849999994" green="0.2011905313" blue="0.20157262679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" red="0.87767687179999998" green="0.86694517510000002" blue="0.78602329849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="leading" secondItem="aRq-DX-rM3" secondAttribute="leading" constant="20" id="0Wg-Nq-yRr"/>
-                            <constraint firstItem="WWB-pe-bS5" firstAttribute="leading" secondItem="4Xx-Xg-AKQ" secondAttribute="trailing" constant="8" id="0xc-Sq-iIs"/>
-                            <constraint firstItem="usn-t4-AmR" firstAttribute="leading" secondItem="aRq-DX-rM3" secondAttribute="leading" constant="123" id="6Oo-tT-YOa"/>
-                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="bottom" secondItem="WWB-pe-bS5" secondAttribute="bottom" id="6mS-lN-WgQ"/>
-                            <constraint firstItem="usn-t4-AmR" firstAttribute="top" secondItem="aRq-DX-rM3" secondAttribute="top" constant="12" id="Ce7-bk-uV0"/>
-                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="centerX" secondItem="mYW-KZ-ywb" secondAttribute="centerX" id="DGE-zY-g0A"/>
-                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="top" secondItem="hbl-C2-4gn" secondAttribute="bottom" constant="-2" id="IDN-CX-sEn"/>
-                            <constraint firstItem="hbl-C2-4gn" firstAttribute="top" secondItem="aRq-DX-rM3" secondAttribute="top" constant="78" id="Jf4-6c-xTu"/>
-                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="top" secondItem="WWB-pe-bS5" secondAttribute="top" id="N5c-3c-qff"/>
-                            <constraint firstItem="hbl-C2-4gn" firstAttribute="centerX" secondItem="mYW-KZ-ywb" secondAttribute="centerX" id="RuC-vi-ED9"/>
-                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="leading" secondItem="aRq-DX-rM3" secondAttribute="leading" constant="100" id="TGD-C4-ZDQ"/>
-                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="top" secondItem="usn-t4-AmR" secondAttribute="bottom" constant="8" id="UI6-B7-Vfb"/>
-                            <constraint firstItem="hbl-C2-4gn" firstAttribute="top" secondItem="aRq-DX-rM3" secondAttribute="top" constant="78" id="VSn-tG-41X"/>
-                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="leading" secondItem="mYW-KZ-ywb" secondAttribute="leadingMargin" id="fIs-Oc-Yi2"/>
-                            <constraint firstItem="aRq-DX-rM3" firstAttribute="bottom" secondItem="4Xx-Xg-AKQ" secondAttribute="bottom" constant="464" id="jsG-2P-StC"/>
-                            <constraint firstItem="usn-t4-AmR" firstAttribute="centerX" secondItem="DyL-Fo-fPN" secondAttribute="centerX" id="oyJ-RI-muK"/>
-                            <constraint firstItem="hbl-C2-4gn" firstAttribute="centerX" secondItem="mYW-KZ-ywb" secondAttribute="centerX" id="pMy-8T-tZE"/>
+                            <constraint firstItem="6bb-tQ-fAE" firstAttribute="top" secondItem="hbl-C2-4gn" secondAttribute="bottom" constant="10" id="4hN-ol-ima"/>
+                            <constraint firstItem="nm8-kk-4yT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Xx-Xg-AKQ" secondAttribute="trailing" constant="8" symbolic="YES" id="5Uf-BR-CVA"/>
+                            <constraint firstItem="usn-t4-AmR" firstAttribute="leading" secondItem="aRq-DX-rM3" secondAttribute="leading" constant="123" id="9K7-cc-5CD"/>
+                            <constraint firstItem="nm8-kk-4yT" firstAttribute="top" secondItem="hbl-C2-4gn" secondAttribute="bottom" constant="10" id="9om-kg-JtG"/>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="top" secondItem="hbl-C2-4gn" secondAttribute="bottom" constant="8" id="DA6-QF-Kj0"/>
+                            <constraint firstItem="6bb-tQ-fAE" firstAttribute="trailing" secondItem="mYW-KZ-ywb" secondAttribute="trailingMargin" id="ECj-ok-v1q"/>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="centerY" secondItem="nm8-kk-4yT" secondAttribute="centerY" constant="-1" id="KVV-PA-agO"/>
+                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="centerX" secondItem="hbl-C2-4gn" secondAttribute="centerX" id="M3n-SL-IKO"/>
+                            <constraint firstItem="4Xx-Xg-AKQ" firstAttribute="leading" secondItem="mYW-KZ-ywb" secondAttribute="leadingMargin" id="OW3-fU-VCI"/>
+                            <constraint firstItem="usn-t4-AmR" firstAttribute="centerX" secondItem="DyL-Fo-fPN" secondAttribute="centerX" id="Pno-7O-daD"/>
+                            <constraint firstItem="usn-t4-AmR" firstAttribute="centerX" secondItem="mYW-KZ-ywb" secondAttribute="centerX" id="Pod-5Y-yCB"/>
+                            <constraint firstItem="usn-t4-AmR" firstAttribute="top" secondItem="aRq-DX-rM3" secondAttribute="top" constant="12" id="daD-J0-d6X"/>
+                            <constraint firstItem="hbl-C2-4gn" firstAttribute="top" secondItem="DyL-Fo-fPN" secondAttribute="bottom" constant="8" symbolic="YES" id="k7v-3a-ehb"/>
+                            <constraint firstItem="6bb-tQ-fAE" firstAttribute="leading" secondItem="nm8-kk-4yT" secondAttribute="trailing" constant="25" id="mlX-g5-cIC"/>
+                            <constraint firstItem="DyL-Fo-fPN" firstAttribute="top" secondItem="usn-t4-AmR" secondAttribute="bottom" constant="8" symbolic="YES" id="zhC-Ze-4lm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aRq-DX-rM3"/>
                     </view>
                     <connections>
                         <outlet property="bigStringLabelFromSelection" destination="DyL-Fo-fPN" id="1e0-Me-izT"/>
-                        <outlet property="painLevelPicker" destination="WWB-pe-bS5" id="lL9-GF-PNY"/>
+                        <outlet property="painValueLabel" destination="nm8-kk-4yT" id="Pql-gR-SNL"/>
+                        <outlet property="stepper" destination="6bb-tQ-fAE" id="7YP-37-JmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0D-mo-5yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
